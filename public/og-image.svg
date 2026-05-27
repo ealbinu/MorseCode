@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">codigomorse.link</title>
+  <desc id="desc">Tarjeta social para una herramienta online de código Morse.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10110b" />
+      <stop offset="0.48" stop-color="#1f1a11" />
+      <stop offset="1" stop-color="#070806" />
+    </linearGradient>
+    <linearGradient id="brass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2d88a" />
+      <stop offset="0.4" stop-color="#ad8241" />
+      <stop offset="1" stop-color="#4d3518" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2f2618" />
+      <stop offset="1" stop-color="#120f0a" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="28" flood-color="#000000" flood-opacity="0.48" />
+    </filter>
+    <pattern id="ticks" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M0 53H54M53 0V54" stroke="#d6b86c" stroke-opacity="0.07" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#ticks)" />
+  <path d="M0 481 C152 448 247 523 393 484 C555 441 606 342 786 371 C949 397 1041 497 1200 442 L1200 630 L0 630 Z" fill="#050605" opacity="0.72" />
+  <g filter="url(#shadow)">
+    <rect x="78" y="85" width="1044" height="460" rx="34" fill="url(#panel)" stroke="#8b6a37" stroke-width="4" />
+    <rect x="107" y="113" width="986" height="404" rx="22" fill="#14130d" stroke="#332816" stroke-width="2" />
+    <circle cx="153" cy="159" r="12" fill="url(#brass)" />
+    <circle cx="1047" cy="159" r="12" fill="url(#brass)" />
+    <circle cx="153" cy="471" r="12" fill="url(#brass)" />
+    <circle cx="1047" cy="471" r="12" fill="url(#brass)" />
+  </g>
+  <g transform="translate(716 148)" filter="url(#shadow)">
+    <rect x="0" y="176" width="305" height="78" rx="20" fill="#080908" stroke="#74552b" stroke-width="4" />
+    <rect x="31" y="44" width="243" height="150" rx="28" fill="#19150e" stroke="#b68b48" stroke-width="5" />
+    <circle cx="152" cy="119" r="74" fill="#080908" stroke="url(#brass)" stroke-width="16" />
+    <circle cx="152" cy="119" r="38" fill="#14130d" stroke="#9f7a3e" stroke-width="7" />
+    <path d="M83 235 C129 203 176 203 222 235" fill="none" stroke="#d8bd75" stroke-width="13" stroke-linecap="round" />
+    <rect x="79" y="218" width="147" height="28" rx="14" fill="#d6b86c" />
+    <circle cx="55" cy="218" r="17" fill="url(#brass)" />
+    <circle cx="250" cy="218" r="17" fill="url(#brass)" />
+  </g>
+  <g transform="translate(156 144)">
+    <text x="0" y="35" fill="#d8bd75" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="2">CODIGOMORSE.LINK</text>
+    <text x="0" y="134" fill="#fff7df" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800">Código Morse</text>
+    <text x="0" y="207" fill="#fff7df" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">online</text>
+    <text x="4" y="276" fill="#ddcfad" font-family="Arial, Helvetica, sans-serif" font-size="30">Decodifica audio, micrófono y texto</text>
+    <text x="4" y="321" fill="#ddcfad" font-family="Arial, Helvetica, sans-serif" font-size="30">directamente en tu navegador.</text>
+    <g transform="translate(4 370)" fill="#f1d88a">
+      <rect x="0" y="0" width="38" height="18" rx="9" />
+      <circle cx="68" cy="9" r="9" />
+      <circle cx="103" cy="9" r="9" />
+      <rect x="134" y="0" width="76" height="18" rx="9" />
+      <circle cx="242" cy="9" r="9" />
+      <rect x="274" y="0" width="38" height="18" rx="9" />
+      <rect x="344" y="0" width="76" height="18" rx="9" />
+    </g>
+  </g>
+</svg>

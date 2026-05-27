@@ -1,0 +1,50 @@
+{
+  "name": "codigomorse.link",
+  "short_name": "Código Morse",
+  "description": "Decodificador y codificador online de código Morse para audio, micrófono y texto.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d0e09",
+  "theme_color": "#16130d",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["education", "utilities"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Decodificar audio",
+      "short_name": "Decodificar",
+      "description": "Decodifica código Morse desde un archivo de audio o micrófono",
+      "url": "/?modo=decodificar",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Codificar texto",
+      "short_name": "Codificar",
+      "description": "Convierte texto a código Morse y genera tonos de audio",
+      "url": "/?modo=codificar",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Guía Morse",
+      "short_name": "Guía",
+      "description": "Aprende código Morse con la guía interactiva",
+      "url": "/?modo=guia",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}
