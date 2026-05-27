@@ -316,6 +316,18 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      <footer className="site-footer">
+        <nav className="site-footer__links" aria-label="Guías de código Morse">
+          <span className="site-footer__label">Guías</span>
+          <a href="/alfabeto-morse">Alfabeto Morse</a>
+          <a href="/traductor-morse">Traductor</a>
+          <a href="/sos-morse">SOS</a>
+          <a href="/aprender-morse">Aprender Morse</a>
+          <a href="/q-codes">Códigos Q</a>
+          <a href="/morse-audio">Decodificar audio</a>
+        </nav>
+      </footer>
     </main>
   )
 }
