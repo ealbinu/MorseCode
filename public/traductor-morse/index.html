@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor Morse online: convierte texto a código Morse y audio gratis</title>
+  <meta name="description" content="Traductor de código Morse online gratuito. Convierte texto a Morse, genera tonos de audio, descarga MP3 y decodifica audio Morse directamente en tu navegador.">
+  <meta name="keywords" content="traductor morse, traductor morse online, convertir texto a morse, morse a texto, traducir morse, morse converter, código morse online">
+  <link rel="canonical" href="https://codigomorse.link/traductor-morse">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://codigomorse.link/traductor-morse">
+  <meta property="og:title" content="Traductor Morse online: texto a Morse y audio gratis">
+  <meta property="og:description" content="Convierte texto a código Morse, genera audio y descarga MP3 directamente en tu navegador. Sin backend, completamente privado.">
+  <meta property="og:image" content="https://codigomorse.link/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Traductor Morse online gratis">
+  <meta name="twitter:description" content="Texto a Morse, Morse a texto y generación de audio. Sin subir datos a ningún servidor.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Traductor Morse online: convierte texto a código Morse y audio gratis","description":"Traductor de código Morse online que convierte texto a Morse, genera tonos de audio y permite descargar MP3 sin subir datos a ningún servidor.","url":"https://codigomorse.link/traductor-morse","inLanguage":"es","publisher":{"@type":"Organization","name":"codigomorse.link","url":"https://codigomorse.link"}}
+  </script>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:linear-gradient(135deg,#211b15 0%,#0d0e0d 52%,#1a1711 100%);color:#f2e6c9;min-height:100vh;line-height:1.7;font-size:16px}
+    a{color:#d4bc83;text-decoration:none}a:hover{color:#d9b866;text-decoration:underline}
+    nav{border-bottom:1px solid #3a3020;padding:14px 24px;display:flex;align-items:center;gap:20px;background:rgba(13,14,13,.85);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+    .brand{font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;color:#d4bc83}
+    main{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+    h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:#d9b866;letter-spacing:-.02em;line-height:1.2;margin-bottom:20px}
+    h2{font-size:1.2rem;font-weight:700;color:#d4bc83;margin:40px 0 12px;border-left:3px solid #7d5923;padding-left:12px}
+    h3{font-size:1rem;font-weight:700;color:#b8a070;margin:24px 0 8px}
+    p{margin-bottom:16px;color:#e0d4b8}
+    .lead{font-size:1.1rem;color:#c8b07a;margin-bottom:32px;line-height:1.6}
+    table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.9rem}
+    th{background:#2d2c25;color:#d4bc83;padding:10px 14px;text-align:left;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+    td{padding:8px 14px;border-bottom:1px solid #2a2518;color:#e0d4b8}
+    tr:hover td{background:rgba(212,188,131,.05)}
+    .m{color:#d9b866;font-family:'Courier New',monospace;font-weight:700;letter-spacing:.2em}
+    .box{background:rgba(212,188,131,.06);border-left:4px solid #d9b866;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0}
+    .box p{margin-bottom:8px}.box p:last-child{margin:0}
+    .steps{counter-reset:steps;list-style:none;padding:0;margin:16px 0}
+    .steps li{counter-increment:steps;display:flex;gap:16px;margin-bottom:16px;align-items:flex-start}
+    .steps li::before{content:counter(steps);min-width:28px;height:28px;border-radius:50%;background:linear-gradient(180deg,#d9b866,#7d5923);color:#211307;font-weight:900;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+    .steps li p{margin:0;color:#e0d4b8}
+    .feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0}
+    .feat{background:#1e1a12;border:1px solid #2a2518;border-radius:8px;padding:16px}
+    .feat strong{display:block;color:#d9b866;margin-bottom:4px;font-size:.9rem}
+    .feat span{font-size:.85rem;color:#a09070}
+    .cta{margin:56px 0 0;padding:32px;background:linear-gradient(135deg,#1e1a12,#141209);border:1px solid #7b6337;border-radius:12px;text-align:center}
+    .cta h2{border:none;padding:0;margin:0 0 10px;font-size:1.3rem}
+    .cta p{margin:0 0 20px;color:#c8b07a}
+    .btn{display:inline-block;padding:14px 32px;background:linear-gradient(180deg,#d9b866,#7d5923);color:#211307;font-weight:900;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;font-size:.9rem;text-decoration:none;transition:opacity .2s}
+    .btn:hover{opacity:.85;color:#211307;text-decoration:none}
+    footer{text-align:center;padding:32px 24px;border-top:1px solid #2a2518;color:#6a5e40;font-size:.8rem}
+    footer a{color:#7b6337}
+    @media(max-width:600px){main{padding:32px 16px 60px}nav{padding:12px 16px}}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="brand">codigomorse.link</a>
+  <span style="color:#6a5e40;font-size:.8rem">← <a href="/">Volver a la herramienta</a></span>
+</nav>
+<main>
+  <h1>Traductor de código Morse online</h1>
+  <p class="lead">Convierte cualquier texto a código Morse, genera tonos de audio reales y descarga un MP3 — todo directamente en tu navegador, sin subir ningún dato a ningún servidor.</p>
+
+  <h2>Qué puede hacer este traductor</h2>
+  <div class="feat-grid">
+    <div class="feat"><strong>Texto → Morse</strong><span>Escribe cualquier mensaje y obtén la secuencia de puntos y guiones al instante.</span></div>
+    <div class="feat"><strong>Audio Morse</strong><span>Escucha los tonos generados con frecuencia y velocidad ajustables.</span></div>
+    <div class="feat"><strong>Descargar MP3</strong><span>Exporta el audio Morse en formato MP3 para uso offline o compartir.</span></div>
+    <div class="feat"><strong>Cinta de papel</strong><span>Visualización estilo telegráfico clásico con la secuencia impresa.</span></div>
+    <div class="feat"><strong>Señal luminosa</strong><span>Modo lámpara y luz total para visualizar el Morse con destellos.</span></div>
+    <div class="feat"><strong>Vibración</strong><span>En dispositivos móviles táctiles, siente el Morse en la mano.</span></div>
+  </div>
+
+  <h2>Cómo usar el traductor</h2>
+  <ol class="steps">
+    <li><p>Escribe tu mensaje en el campo de texto. El traductor acepta letras, números y los signos de puntuación del estándar Morse internacional.</p></li>
+    <li><p>Ajusta la frecuencia del tono (en Hz) y la velocidad en palabras por minuto (WPM) según tu preferencia. El estándar de radioafición es 20 WPM.</p></li>
+    <li><p>Presiona el reproductor de audio vintage para escuchar el mensaje en Morse. Puedes pausar, rebobinar y ajustar el volumen.</p></li>
+    <li><p>Descarga el archivo MP3 si quieres guardar o compartir el audio generado.</p></li>
+    <li><p>Activa el modo lámpara para una representación visual del mensaje, o la luz total para una señal de pantalla completa.</p></li>
+  </ol>
+
+  <h2>Ejemplos de traducción Morse</h2>
+  <table>
+    <thead><tr><th>Texto</th><th>Código Morse</th></tr></thead>
+    <tbody>
+      <tr><td>SOS</td><td class="m">... --- ...</td></tr>
+      <tr><td>HOLA</td><td class="m">.... --- .-.. .-</td></tr>
+      <tr><td>QSL</td><td class="m">--.- ... .-..</td></tr>
+      <tr><td>73</td><td class="m">--... ...--</td></tr>
+      <tr><td>DE EA4XYZ</td><td class="m">-.. . . .- ....- -..- -.-- --..</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.85rem;color:#6a5e40">73 = saludos entre radioaficionados. DE = "de parte de" en protocolo CW. QSL = confirmación de contacto.</p>
+
+  <h2>Privacidad y funcionamiento técnico</h2>
+  <p>A diferencia de otros traductores en línea, <strong>codigomorse.link no envía ningún dato a un servidor</strong>. La conversión de texto a Morse y la generación de audio ocurren íntegramente en tu dispositivo mediante la Web Audio API del navegador.</p>
+  <p>Esto significa que puedes usar el traductor sin conexión una vez que la página ha cargado, y que ningún mensaje que escribas sale nunca de tu dispositivo.</p>
+
+  <h2>Tipos de onda de audio</h2>
+  <p>El generador de audio ofrece cuatro formas de onda: <strong>seno</strong> (el tono Morse tradicional, suave y limpio), <strong>cuadrada</strong> (más agresivo, como radios antiguas), <strong>triangular</strong> y <strong>sierra</strong>. La onda de seno es la más usada en comunicaciones reales.</p>
+
+  <div class="cta">
+    <h2>Traducir texto a código Morse ahora</h2>
+    <p>Codificador con reproductor de audio, descarga MP3, señal luminosa y vibración.</p>
+    <a href="/" class="btn">Abrir el traductor →</a>
+  </div>
+</main>
+<footer>
+  <p><a href="/">codigomorse.link</a> — Traductor de código Morse online, gratis y privado.</p>
+</footer>
+</body>
+</html>

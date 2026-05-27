@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo aprender código Morse: guía práctica para principiantes</title>
+  <meta name="description" content="Guía para aprender código Morse desde cero: método Koch, método Farnsworth, técnicas de práctica y herramientas interactivas online. Sin memorizar tablas.">
+  <meta name="keywords" content="aprender codigo morse, como aprender morse, método koch morse, aprender morse desde cero, morse principiantes, ejercicios morse, practicar morse">
+  <link rel="canonical" href="https://codigomorse.link/aprender-morse">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://codigomorse.link/aprender-morse">
+  <meta property="og:title" content="Cómo aprender código Morse: guía práctica para principiantes">
+  <meta property="og:description" content="Método Koch, método Farnsworth y técnicas modernas para aprender Morse sin memorizar tablas. Con herramientas de práctica online.">
+  <meta property="og:image" content="https://codigomorse.link/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cómo aprender código Morse desde cero">
+  <meta name="twitter:description" content="Método Koch, Farnsworth y técnicas modernas para aprender Morse sin memorizar tablas.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Cómo aprender código Morse: guía práctica para principiantes","description":"Guía completa para aprender código Morse con el método Koch, Farnsworth y técnicas de práctica interactiva.","url":"https://codigomorse.link/aprender-morse","inLanguage":"es","publisher":{"@type":"Organization","name":"codigomorse.link","url":"https://codigomorse.link"}}
+  </script>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:linear-gradient(135deg,#211b15 0%,#0d0e0d 52%,#1a1711 100%);color:#f2e6c9;min-height:100vh;line-height:1.7;font-size:16px}
+    a{color:#d4bc83;text-decoration:none}a:hover{color:#d9b866;text-decoration:underline}
+    nav{border-bottom:1px solid #3a3020;padding:14px 24px;display:flex;align-items:center;gap:20px;background:rgba(13,14,13,.85);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+    .brand{font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;color:#d4bc83}
+    main{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+    h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:#d9b866;letter-spacing:-.02em;line-height:1.2;margin-bottom:20px}
+    h2{font-size:1.2rem;font-weight:700;color:#d4bc83;margin:40px 0 12px;border-left:3px solid #7d5923;padding-left:12px}
+    h3{font-size:1rem;font-weight:700;color:#b8a070;margin:24px 0 8px}
+    p{margin-bottom:16px;color:#e0d4b8}
+    .lead{font-size:1.1rem;color:#c8b07a;margin-bottom:32px;line-height:1.6}
+    .box{background:rgba(212,188,131,.06);border-left:4px solid #d9b866;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0}
+    .box p{margin-bottom:8px}.box p:last-child{margin:0}
+    .method-card{background:#1e1a12;border:1px solid #2a2518;border-radius:10px;padding:20px 24px;margin:16px 0}
+    .method-card h3{margin:0 0 10px;color:#d9b866;font-size:1.05rem}
+    .method-card p{margin:0;font-size:.9rem;color:#c0b090}
+    .badge{display:inline-block;background:rgba(212,188,131,.12);border:1px solid #7b6337;color:#d4bc83;padding:2px 10px;border-radius:999px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .routine{list-style:none;padding:0;margin:16px 0}
+    .routine li{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid #2a2518;align-items:flex-start}
+    .routine li:last-child{border:none}
+    .routine .time{min-width:60px;font-family:'Courier New',monospace;color:#d9b866;font-weight:700;font-size:.9rem}
+    .routine p{margin:0;color:#c0b090;font-size:.9rem}
+    .tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:16px 0}
+    .tool{background:#1e1a12;border:1px solid #2a2518;border-radius:8px;padding:12px 14px}
+    .tool strong{display:block;color:#d4bc83;font-size:.85rem;margin-bottom:2px}
+    .tool span{font-size:.8rem;color:#7b6337}
+    .cta{margin:56px 0 0;padding:32px;background:linear-gradient(135deg,#1e1a12,#141209);border:1px solid #7b6337;border-radius:12px;text-align:center}
+    .cta h2{border:none;padding:0;margin:0 0 10px;font-size:1.3rem}
+    .cta p{margin:0 0 20px;color:#c8b07a}
+    .btn{display:inline-block;padding:14px 32px;background:linear-gradient(180deg,#d9b866,#7d5923);color:#211307;font-weight:900;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;font-size:.9rem;text-decoration:none;transition:opacity .2s}
+    .btn:hover{opacity:.85;color:#211307;text-decoration:none}
+    footer{text-align:center;padding:32px 24px;border-top:1px solid #2a2518;color:#6a5e40;font-size:.8rem}
+    footer a{color:#7b6337}
+    @media(max-width:600px){main{padding:32px 16px 60px}nav{padding:12px 16px}}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="brand">codigomorse.link</a>
+  <span style="color:#6a5e40;font-size:.8rem">← <a href="/">Volver a la herramienta</a></span>
+</nav>
+<main>
+  <h1>Cómo aprender código Morse</h1>
+  <p class="lead">Aprender código Morse no es tan difícil como parece — si lo haces con el método correcto. El error más común es intentar memorizar la tabla visualmente. La clave es aprender sonidos, no símbolos.</p>
+
+  <h2>Por qué aprender Morse hoy</h2>
+  <p>El código Morse sigue siendo relevante en 2025 por varias razones prácticas. Los radioaficionados (<em>hams</em>) deben conocerlo para operar en bandas de HF y obtener licencias de nivel avanzado en muchos países. En situaciones de emergencia, es posible comunicarse con Morse usando cualquier fuente de luz, sonido o vibración.</p>
+  <p>Más allá del uso práctico, aprender Morse mejora la memoria auditiva, la concentración y es una habilidad con historia. Millones de personas lo usaron durante guerras, expediciones y navegación antes de que existieran las comunicaciones digitales.</p>
+
+  <h2>El método Koch — el más efectivo</h2>
+  <div class="method-card">
+    <span class="badge">Recomendado</span>
+    <h3>Método Koch</h3>
+    <p>Propuesto por el psicólogo Ludwig Koch en 1930. La idea central es comenzar con <strong>solo dos letras</strong> a velocidad real (20 WPM o más) y añadir una nueva letra únicamente cuando superas el 90% de precisión con las actuales. Nunca aprendes lento para acelerar después — aprendes directamente a velocidad operativa.</p>
+  </div>
+  <p>El orden Koch tradicional comienza con K y M (caracteres de alta frecuencia con ritmos distintos) y avanza añadiendo letras de forma que cada nueva tenga un patrón diferente a las anteriores. Esto evita la confusión entre caracteres similares.</p>
+
+  <h2>El método Farnsworth</h2>
+  <div class="method-card">
+    <h3>Método Farnsworth</h3>
+    <p>Variación que mantiene los caracteres individuales a velocidad alta (20+ WPM) pero aumenta el espacio entre letras y palabras. Esto da tiempo para pensar al principio sin crear el hábito de escuchar Morse lento. A medida que mejoras, vas reduciendo los espacios hasta alcanzar la velocidad real.</p>
+  </div>
+
+  <h2>Técnica de chunking — aprende sonidos, no letras</h2>
+  <p>El chunking es la técnica que usan los operadores expertos. En lugar de contar mentalmente "punto-punto-punto = S", reconoces el patrón sonoro completo de S como una unidad: <em>dit-dit-dit</em>. Es el mismo principio con el que lees palabras completas sin deletrear letra a letra.</p>
+  <div class="box">
+    <p>Practica diciendo en voz alta el sonido de cada carácter: "dit" para punto, "dah" para guión. A = "dit-dah". B = "dah-dit-dit-dit". Con repetición, el cerebro lo automatiza.</p>
+  </div>
+
+  <h2>Rutina de práctica recomendada</h2>
+  <ul class="routine">
+    <li><span class="time">5 min</span><p>Calentamiento: escucha caracteres individuales aleatorios y anótalos sin presión.</p></li>
+    <li><span class="time">10 min</span><p>Práctica de nuevo carácter: escucha únicamente los dos o tres caracteres que estás aprendiendo esta semana.</p></li>
+    <li><span class="time">10 min</span><p>Práctica mixta: texto aleatorio con todos los caracteres aprendidos hasta ahora.</p></li>
+    <li><span class="time">5 min</span><p>Transmisión: usa el tapper o una llave telegraph real para enviar lo que aprendiste hoy.</p></li>
+  </ul>
+  <p>La <strong>constancia diaria</strong> supera las sesiones largas esporádicas. 20-30 minutos todos los días es más efectivo que 3 horas los fines de semana.</p>
+
+  <h2>Errores comunes al aprender Morse</h2>
+  <p><strong>Aprender lento:</strong> el Morse lento suena diferente al Morse rápido. Aprende desde el inicio a velocidad real aunque cometas errores.</p>
+  <p><strong>Mirar la tabla:</strong> si identificas caracteres buscando en una tabla visual, nunca desarrollarás el reconocimiento auditivo automático.</p>
+  <p><strong>Saltar práctica de transmisión:</strong> enviar Morse consolida el aprendizaje de forma diferente a recibirlo. Ambas habilidades se refuerzan mutuamente.</p>
+
+  <h2>Herramientas en codigomorse.link</h2>
+  <div class="tools">
+    <div class="tool"><strong>Tapper interactivo</strong><span>Tecla telegraph en pantalla con lectura de Morse y texto en tiempo real.</span></div>
+    <div class="tool"><strong>Metrónomo de operador</strong><span>Cadencia configurable para entrenamiento de ritmo.</span></div>
+    <div class="tool"><strong>Decodificador de texto</strong><span>Escribe Morse manualmente y lo convierte a texto.</span></div>
+    <div class="tool"><strong>Cheatsheet de letras</strong><span>Referencia rápida de todo el alfabeto con los códigos.</span></div>
+    <div class="tool"><strong>Codificador de audio</strong><span>Genera y escucha cualquier texto en Morse a la velocidad que elijas.</span></div>
+  </div>
+
+  <div class="cta">
+    <h2>Empieza a practicar ahora</h2>
+    <p>Tapper, metrónomo de operador, cheatsheet y decodificador en la Guía interactiva.</p>
+    <a href="/" class="btn">Abrir la Guía →</a>
+  </div>
+</main>
+<footer>
+  <p><a href="/">codigomorse.link</a> — Herramientas interactivas para aprender código Morse online, gratis.</p>
+</footer>
+</body>
+</html>

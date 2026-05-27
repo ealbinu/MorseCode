@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificar audio Morse online: sube un archivo o graba tu micrófono</title>
+  <meta name="description" content="Decodifica código Morse desde archivos de audio MP3, WAV u OGG, o graba directamente desde el micrófono. Análisis en el navegador, sin subir audio a ningún servidor.">
+  <meta name="keywords" content="decodificar audio morse, morse audio decoder, convertir audio a morse, morse desde microfono, decodificador morse audio, mp3 a morse, wav a morse">
+  <link rel="canonical" href="https://codigomorse.link/morse-audio">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://codigomorse.link/morse-audio">
+  <meta property="og:title" content="Decodificar audio Morse online: archivo o micrófono">
+  <meta property="og:description" content="Analiza archivos de audio MP3/WAV o graba desde el micrófono para decodificar código Morse. Todo en tu navegador, sin subir datos.">
+  <meta property="og:image" content="https://codigomorse.link/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Decodificar audio Morse online">
+  <meta name="twitter:description" content="Sube un archivo de audio o graba desde el micrófono. El decodificador analiza el Morse directamente en tu navegador.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Decodificar audio Morse online: sube un archivo o graba tu micrófono","description":"Decodifica código Morse desde archivos de audio MP3, WAV u OGG, o directamente desde el micrófono. Análisis en el navegador sin subir datos a ningún servidor.","url":"https://codigomorse.link/morse-audio","inLanguage":"es","publisher":{"@type":"Organization","name":"codigomorse.link","url":"https://codigomorse.link"}}
+  </script>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:linear-gradient(135deg,#211b15 0%,#0d0e0d 52%,#1a1711 100%);color:#f2e6c9;min-height:100vh;line-height:1.7;font-size:16px}
+    a{color:#d4bc83;text-decoration:none}a:hover{color:#d9b866;text-decoration:underline}
+    nav{border-bottom:1px solid #3a3020;padding:14px 24px;display:flex;align-items:center;gap:20px;background:rgba(13,14,13,.85);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+    .brand{font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;color:#d4bc83}
+    main{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+    h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:#d9b866;letter-spacing:-.02em;line-height:1.2;margin-bottom:20px}
+    h2{font-size:1.2rem;font-weight:700;color:#d4bc83;margin:40px 0 12px;border-left:3px solid #7d5923;padding-left:12px}
+    p{margin-bottom:16px;color:#e0d4b8}
+    .lead{font-size:1.1rem;color:#c8b07a;margin-bottom:32px;line-height:1.6}
+    .box{background:rgba(212,188,131,.06);border-left:4px solid #d9b866;padding:16px 20px;margin:24px 0;border-radius:0 8px 8px 0}
+    .box p{margin-bottom:8px}.box p:last-child{margin:0}
+    .steps{counter-reset:steps;list-style:none;padding:0;margin:16px 0}
+    .steps li{counter-increment:steps;display:flex;gap:16px;margin-bottom:16px;align-items:flex-start}
+    .steps li::before{content:counter(steps);min-width:28px;height:28px;border-radius:50%;background:linear-gradient(180deg,#d9b866,#7d5923);color:#211307;font-weight:900;font-size:.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+    .steps li p{margin:0;color:#e0d4b8}
+    .format-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:16px 0}
+    .fmt{background:#1e1a12;border:1px solid #2a2518;border-radius:8px;padding:10px 12px;text-align:center}
+    .fmt strong{display:block;font-family:'Courier New',monospace;color:#d9b866;font-size:1rem}
+    .fmt span{font-size:.78rem;color:#7b6337}
+    .tips{list-style:none;padding:0;margin:16px 0}
+    .tips li{padding:10px 0;border-bottom:1px solid #1e1a12;color:#c0b090;font-size:.9rem;padding-left:20px;position:relative}
+    .tips li::before{content:"→";position:absolute;left:0;color:#7d5923}
+    .tips li:last-child{border:none}
+    .pipeline{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0;align-items:center}
+    .pipe-step{background:#1e1a12;border:1px solid #2a2518;border-radius:6px;padding:8px 14px;font-size:.82rem;color:#c8b07a}
+    .pipe-arrow{color:#7d5923;font-size:1.2rem;flex-shrink:0}
+    .cta{margin:56px 0 0;padding:32px;background:linear-gradient(135deg,#1e1a12,#141209);border:1px solid #7b6337;border-radius:12px;text-align:center}
+    .cta h2{border:none;padding:0;margin:0 0 10px;font-size:1.3rem}
+    .cta p{margin:0 0 20px;color:#c8b07a}
+    .btn{display:inline-block;padding:14px 32px;background:linear-gradient(180deg,#d9b866,#7d5923);color:#211307;font-weight:900;text-transform:uppercase;letter-spacing:.08em;border-radius:999px;font-size:.9rem;text-decoration:none;transition:opacity .2s}
+    .btn:hover{opacity:.85;color:#211307;text-decoration:none}
+    footer{text-align:center;padding:32px 24px;border-top:1px solid #2a2518;color:#6a5e40;font-size:.8rem}
+    footer a{color:#7b6337}
+    @media(max-width:600px){main{padding:32px 16px 60px}nav{padding:12px 16px}.pipeline{gap:4px}.pipe-step{font-size:.75rem;padding:6px 10px}}
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="brand">codigomorse.link</a>
+  <span style="color:#6a5e40;font-size:.8rem">← <a href="/">Volver a la herramienta</a></span>
+</nav>
+<main>
+  <h1>Decodificar audio en código Morse</h1>
+  <p class="lead">Sube un archivo de audio con señales Morse o graba directamente desde tu micrófono. El decodificador analiza el audio, identifica los tonos y los convierte a texto — todo en tu navegador, sin enviar el audio a ningún servidor.</p>
+
+  <h2>Formatos de audio soportados</h2>
+  <div class="format-grid">
+    <div class="fmt"><strong>MP3</strong><span>Audio comprimido</span></div>
+    <div class="fmt"><strong>WAV</strong><span>Audio sin comprimir</span></div>
+    <div class="fmt"><strong>OGG</strong><span>Vorbis / Opus</span></div>
+    <div class="fmt"><strong>M4A</strong><span>AAC / Apple</span></div>
+    <div class="fmt"><strong>FLAC</strong><span>Lossless</span></div>
+    <div class="fmt"><strong>MIC</strong><span>Grabación en vivo</span></div>
+  </div>
+
+  <h2>Cómo funciona el decodificador</h2>
+  <p>El decodificador usa la <strong>Web Audio API</strong> del navegador para procesar el audio sin instalaciones adicionales. El proceso ocurre en varias etapas:</p>
+  <div class="pipeline">
+    <div class="pipe-step">Audio de entrada</div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">FFT por frecuencias</div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">Detección de tono Morse</div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">Análisis de energía</div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">Segmentación puntos/guiones</div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">Clasificación de duraciones</div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">Texto decodificado</div>
+  </div>
+  <p>El sistema evalúa múltiples candidatos de frecuencia y selecciona el tono con mayor energía, mayor repetición y patrones ON/OFF consistentes. Esto permite ignorar ruido de fondo e interferencias moderadas.</p>
+
+  <h2>Cómo usar el decodificador</h2>
+  <ol class="steps">
+    <li><p><strong>Subir archivo:</strong> haz clic en la zona de carga y selecciona tu archivo de audio, o arrástralo directamente. Acepta MP3, WAV, OGG, M4A y otros formatos comunes.</p></li>
+    <li><p><strong>Grabar micrófono:</strong> alternativamente, activa el micrófono para analizar audio en tiempo real. Útil para descifrar transmisiones de radio o entrenamiento con llave.</p></li>
+    <li><p><strong>Analizar:</strong> el decodificador procesa el audio y muestra la secuencia Morse detectada junto con el texto resultante. El espectrograma muestra el análisis de frecuencias en detalle.</p></li>
+    <li><p><strong>Revisar resultados:</strong> el resumen de análisis indica la frecuencia del tono detectado, la velocidad estimada en WPM y la confianza en la decodificación.</p></li>
+  </ol>
+
+  <h2>Consejos para mejores resultados</h2>
+  <ul class="tips">
+    <li>Usa grabaciones limpias con un solo tono Morse. El decodificador funciona mejor con señales CW puras.</li>
+    <li>La velocidad ideal para decodificación automática está entre 10 y 30 WPM. Velocidades muy altas o muy bajas pueden reducir la precisión.</li>
+    <li>Si hay mucho ruido de fondo, intenta con una versión del audio filtrada en un editor externo antes de subir.</li>
+    <li>Para grabaciones de micrófono, acerca el micrófono al altavoz de radio o usa un cable de audio directo para evitar ruido ambiental.</li>
+    <li>El espectrograma en tiempo real ayuda a confirmar que el sistema está detectando la frecuencia correcta del tono Morse.</li>
+  </ul>
+
+  <h2>Privacidad del audio</h2>
+  <div class="box">
+    <p><strong>Tu audio nunca sale de tu dispositivo.</strong> A diferencia de servicios en la nube, codigomorse.link no sube el archivo a ningún servidor. Todo el procesamiento se realiza localmente mediante la Web Audio API estándar del navegador.</p>
+    <p>Esto también significa que el decodificador funciona sin conexión a internet una vez que la página ha cargado completamente.</p>
+  </div>
+
+  <div class="cta">
+    <h2>Decodificar audio Morse ahora</h2>
+    <p>Sube un archivo o activa el micrófono. Análisis instantáneo, completamente privado.</p>
+    <a href="/" class="btn">Abrir el decodificador →</a>
+  </div>
+</main>
+<footer>
+  <p><a href="/">codigomorse.link</a> — Decodificador de audio Morse online, sin backend y completamente privado.</p>
+</footer>
+</body>
+</html>
