@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc && vite build",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name codigomorse-link --branch main",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name codigomorse-link --branch main --commit-dirty=true --commit-message=deploy",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
